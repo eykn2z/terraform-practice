@@ -19,7 +19,7 @@ jobs:
       PROJECT_NUMBER: 542927638574
       PROJECT_NAME: practice-408205
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: hashicorp/setup-terraform@v3
       - run: echo "$GCP_SA_KEY" > $GOOGLE_APPLICATION_CREDENTIALS
       - uses: aws-actions/configure-aws-credentials@v1
